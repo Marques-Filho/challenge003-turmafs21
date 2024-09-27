@@ -15,50 +15,52 @@
 <body>
   <!-- Cabeçalho -->
   <header>
-    <h1>Teste e Fixação</h1>
-    <p>Testando e fixando HTML/CSS</p>
+    <div class="py-3">
+      <h1>Teste e Fixação</h1>
+      <p>Testando e fixando HTML/CSS</p>
+    </div>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon navbar-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white rounded-3 mt-1" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white rounded-3" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white rounded-3" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white rounded-3" href="#contato" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"> Contato </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#contact">Whatsapp</a></li>
+                <li><a class="dropdown-item" href="#contact">Instagram</a></li>
+                <li><a class="dropdown-item" href="#contact">Facebook</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <!-- Barra de navegação -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <button class="navbar-toggler border border-secondary" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon navbar-dark"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link text-white rounded-3" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white rounded-3" href="#">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white rounded-3" href="#">FAQ</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white rounded-3" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false"> Contato </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Instagram</a></li>
-              <li><a class="dropdown-item" href="#">Facebook</a></li>
-              <li><a class="dropdown-item" href="#">Telefones</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <div class="input-group">
-            <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-light" type="submit">
-              <i class="bi bi-search"></i>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </nav>
 
   <!-- Conteúdo principal -->
   <main>
@@ -114,7 +116,7 @@
     </section>
 
     <!-- Acordeão de Perguntas Frequentes -->
-    <section class="container">
+    <section id="faq" class="container">
       <h2 class="text-center">Perguntas Frequentes</h2>
       <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
@@ -183,7 +185,7 @@
   </main>
 
   <!-- Rodapé -->
-  <footer class="text-center mt-5">
+  <footer id="contact" class="text-center mt-5">
     <div class="container">
       <p>&copy; 2024 Teste e Fixação - Criado por Marques. Todos os direitos reservados.</p>
       <a href="#" class="text-white social-icon"><i class="bi bi-whatsapp fs-4 p-2"></i></a>

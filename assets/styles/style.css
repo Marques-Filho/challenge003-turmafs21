@@ -1,6 +1,7 @@
 body {
     font-family: "Arial", sans-serif;
     background-color: #f0f0f0;
+    padding-top: 180px
 }
 
 /* Cabeçalho */
@@ -8,7 +9,10 @@ header {
     background-color: #4CAF50;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header h1 {
@@ -103,9 +107,9 @@ footer {
 }
 
 /* Estilos para telas menores */
-@media (max-width: 995px) {
-    .content {
-        flex-direction: column;
-        align-items: center;
-    }
-    }
+@media (max-width: 550px) {
+.content {
+    flex-direction: column;
+    align-items: center;
+}
+}
