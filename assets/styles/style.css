@@ -1,7 +1,11 @@
 body {
     font-family: "Arial", sans-serif;
     background-color: #f0f0f0;
-  
+    background-image: url('../images/25101.jpg'); /* Caminho da imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz com que a imagem fique fixa ao rolar a página */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
 }
 
 /* Cabeçalho */
