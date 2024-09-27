@@ -1,0 +1,108 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #333;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4CAF50;
+    background-color: rgba(76, 175, 79, 0.685); /* Adicionado: fundo sutil no hover */
+}
+
+.navbar .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.navbar .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+/* Conteúdo principal */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.text-column {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.image-column {
+    flex: 1;
+    padding: 20px;
+    max-width: 450px;
+}
+
+.image-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos adicionais para o layout do conteúdo */
+.content .carousel {
+  height: 100%;
+}
+
+.content .carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 20px 0;
+}
+
+.social-icon i {
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover i {
+    color: #4CAF50; /* Cor dos ícones ao passar o mouse, mesma cor do header */
+}
+
+/* Estilos para telas menores */
+@media (max-width: 995px) {
+    .content {
+        flex-direction: column;
+    }
+}
