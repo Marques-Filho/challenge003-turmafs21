@@ -29,7 +29,7 @@ nav a {
 
 nav a:hover {
     color: #4CAF50;
-    background-color: rgba(76, 175, 79, 0.685); /* Adicionado: fundo sutil no hover */
+    background-color: rgba(76, 175, 79, 0.685); 
 }
 
 .navbar .form-control {
@@ -58,6 +58,7 @@ nav a:hover {
     flex: 1;
     padding: 20px;
     max-width: 600px;
+    margin: auto;
 }
 
 .justify {
@@ -68,6 +69,7 @@ nav a:hover {
     flex: 1;
     padding: 20px;
     max-width: 450px;
+    margin: auto;
 }
 
 .image-column img {
@@ -104,5 +106,6 @@ footer {
 @media (max-width: 995px) {
     .content {
         flex-direction: column;
+        align-items: center;
     }
-}
+    }
